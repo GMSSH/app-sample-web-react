@@ -1,5 +1,14 @@
 import './App.css'
 function App() {
+    // 初始化
+    window.$gm.request('/api/center/check_status', {
+        method: 'post',
+        data: {
+            app_name: window?.$gm?.name,
+            version: window?.$gm?.version,
+            communication_type: 'socket',
+        },
+    })
     $gm.props.childDestroyedListener(() => {
         console.log('子应用销毁了')
     });
