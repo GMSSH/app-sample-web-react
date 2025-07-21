@@ -13,7 +13,7 @@ yarn install
 yarn run build
 
 # 创建输出目录
-output_dir="../dist/web"
+output_dir="../dist/www"
 mkdir -p "$output_dir"
 
 # 将打包后的内容复制到输出目录
